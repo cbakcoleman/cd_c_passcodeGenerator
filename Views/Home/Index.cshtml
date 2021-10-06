@@ -1,12 +1,12 @@
 
-@model string 
+@* @model string 
 @{
     int counter = 1;
     foreach (var count in Model)
     {
         counter = counter +1;
     }
-}
+} *@
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,9 +17,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Random Passcode Generator (passcode # @counter</h3>
+    <h3>Random Passcode Generator (passcode # @ViewBag.Times )</h3>
     <div>
-        <p>@Model</p>
+        <p>@ViewBag.Passcode</p>
+        <a href="/new">Generate</a>
     </div>
 </body>
 </html>
