@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
+// DON'T ADD ANYTHING HERE JUST LEAVE AS IS
 namespace cd_c_passcodeGenerator
 {
     public class Program

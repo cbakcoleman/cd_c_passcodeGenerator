@@ -1,0 +1,25 @@
+
+@model string 
+@{
+    int counter = 1;
+    foreach (var count in Model)
+    {
+        counter = counter +1;
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Random Passcode Generator (passcode # @counter</h3>
+    <div>
+        <p>@Model</p>
+    </div>
+</body>
+</html>
